@@ -6,6 +6,7 @@ import SinglePost from './components/singlepost';
 import Post from './components/post';
 import Contact from "./components/contact";
 import NavBar from "./components/navbar";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route element= {<SinglePost/>} path= '/post/:slug'/>
         <Route element= {<Post/>} path= '/blog'/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 }
